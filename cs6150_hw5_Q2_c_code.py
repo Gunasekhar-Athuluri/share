@@ -6,7 +6,7 @@ def random_walk(t, p=0.5):
     for i in range(t):
         step = 1 if np.random.rand() < p else -1
         position += step
-        if position == 0:  # Crosses the origin
+        if position == 0: 
             crossings += 1
     return crossings
 
